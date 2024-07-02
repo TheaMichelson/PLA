@@ -2,100 +2,42 @@
 
 
 body {
-   background-image: url('../misc/background.webp');
-   background-repeat: no-repeat;
-   background-size: fill;
-   background-size: 100% 100%;
- }
-
-h1 {
-   text-align: center;
-   font-family: Rye;
-   font-size: 60px;
+   margin: 0;
+   font-family: 'Arial, sans-serif';
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-/* ===============================
-   Mobile Styles: 0px to 640px 
-   ===============================
-*/
-@media only screen and (max-width: 640px) {
-
-   .gallery__img {
-      width: 100px;
-      height: 200px;
-      object-fit: cover;
-
-      border: 10px solid black;
-      padding: 10px;
-   }
-
-   .flex-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 70px;
-      padding-left: 50px;
-      padding-right: 50px;
-   }
-
-   li {
-      border: 10px solid black;
-      padding: 30px;
-      margin: 100px 0;
-      text-decoration: underline;
-   }
-
-   h2 {
-      text-align: center;
-      font-family: Playfair Display SC;
-      padding-bottom: 70px;
-      padding-left: 30px;
-      padding-right: 30px;
-   }
-
+.bg-peach {
+   background-color: #ffebcd; /* Light peach color for the background */
 }
 
-
-/* =============================================
-   Tablet and Desktop Styles: greater than 640px
-   =============================================
-*/
-@media only screen and (min-width: 641px) {
-
-  .gallery__img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-
-      border: 10px solid black;
-      padding: 10px;
-   }
-
-   .flex-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding-bottom: 70px;
-      padding-left: 50px;
-      padding-right: 50px;
-   }
-
-   li {
-      border: 10px solid black;
-      padding: 30px;
-      margin: 100px 0;
-      text-decoration: underline;
-      border-left: 120px solid black;
-      border-right: 120px solid black;
-   }
-
-   h2 {
-      text-align: center;
-      font-family: Playfair Display SC;
-      padding-bottom: 200px;
-      padding-left: 300px;
-      padding-right: 300px;
-   }
+.card {
+   background: #ffffff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   overflow: hidden;
 }
- 
+
+.card-title {
+   color: #ff69b4; /* Pink color for the header text */
+}
+
+.card-text, .list-unstyled, .card-body h4 {
+   color: #666;
+}
+
+.card-body h4 {
+   margin-top: 20px;
+   font-size: 1.5em;
+}
+
+a {
+   color: #ff69b4;
+}
+
+a:hover {
+   color: #ff1493; /* Darker pink color for hover effect */
+}
