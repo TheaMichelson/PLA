@@ -2,140 +2,43 @@
 
 
 body {
-   background-image: url('../misc/background.webp');
-   background-repeat: no-repeat;
-   background-size: fill;
-   background-size: 100% 100%;
- }
-
-h1 {
-   padding-top: 30px;
-   text-align: center;
-   font-family: Rye;
-   font-size: 60px;
-}
-
-h2 {
-   text-align: center;
-   font-family: Playfair Display SC;
-   padding-bottom: 70px;
-   padding-left: 50px;
-   padding-right: 50px;
-}
-
-h3 {
-   text-align: Left;
-   font-family: Playfair Display SC;
-   padding-bottom: 70px;
-   padding-left: 50px;
-   padding-right: 50px;
-}
-
-h4 {
-   text-align: Left;
-   font-family: Playfair Display SC;
-   padding-bottom: 70px;
-   padding-left: 70px;
-   padding-right: 50px;
-}
-
-ul {
-   list-style-type: none;
-   padding: 160px;
+   margin: 0;
+   font-family: 'Arial, sans-serif';
+   height: 100vh;
+   display: flex;
    justify-content: center;
-   font-size: 30px; 
+   align-items: center;
 }
 
-nav > ul > li {
-   padding: 0px;
-   margin: 10px 0;
-   text-decoration: underline;
-   font-size: 20px;
+.container {
+   background: #ffffff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   padding: 30px;
 }
 
-/* ===============================
-   Mobile Styles: 0px to 640px 
-   ===============================
-*/
-@media only screen and (max-width: 640px) {
-
-   .gallery__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
-      border: 10px solid black;
-      padding: 10px;
-   }
-
-   .flex-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 70px;
-      padding-left: 50px;
-      padding-right: 50px;
-   }
-
-   li {
-      border: 10px solid black;
-      padding: 30px;
-      margin: 100px 0;
-      text-decoration: underline;
-   }
-
+header h1 {
+   margin: 0;
+   font-size: 2.5em;
+   color: #ff69b4; /* Pink color for the header text */
 }
 
-
-/* =============================================
-   Tablet and Desktop Styles: greater than 640px
-   =============================================
-*/
-@media only screen and (min-width: 641px) {
-
-  .gallery__img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-
-   border: 10px solid black;
-   padding: 10px;
-   }
-
-   .banner {
-      width: fill;
-   }
-
-   .flex-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding-bottom: 70px;
-      padding-left: 50px;
-      padding-right: 50px;
-   }
-
-   li {
-      border: 10px solid black;
-      padding: 30px;
-      margin: 100px 0;
-      text-decoration: underline;
-      border-left: 120px solid black;
-      border-right: 120px solid black;
-   }
+header p {
+   font-size: 1.2em;
+   color: #666;
 }
 
-/* =============================================
-   Print Styles
-   =============================================
-*/
-@media print {
+.btn.custom-btn {
+   background: #ff69b4; /* Pink color for the buttons */
+   color: #ffffff;
+   border: none;
+   transition: background 0.3s;
+}
 
-   body {
-     margin: 0;
-     color: #000;
-     background-color: #fff;
-   }
- 
- }
- 
+.btn.custom-btn:hover {
+   background: #ff1493; /* Darker pink color for hover effect */
+}
+
+.bg-peach {
+   background-color: #ffebcd; /* Light peach color for the background */
+}
