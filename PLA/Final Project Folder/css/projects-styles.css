@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+
+body {
+   margin: 0;
+   font-family: 'Arial, sans-serif';
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.bg-peach {
+   background-color: #ffebcd; /* Light peach color for the background */
+}
+
+.card {
+   background: #ffffff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   overflow: hidden;
+   padding: 20px;
+}
+
+.card-title {
+   color: #ff69b4; /* Pink color for the header text */
+}
+
+a {
+   color: #ff69b4;
+}
+
+a:hover {
+   color: #ff1493; /* Darker pink color for hover effect */
+}
+
+.carousel-item img {
+   max-height: 500px;
+   width: auto;
+   margin: 0 auto;
+   object-fit: contain; /* Ensure the entire image is visible */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff69b4; /* Pink color for the arrows */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 8 8'%3E%3Cpath d='M4.5 0l-4 4 4 4v-3h3v-2h-3v-3z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 8 8'%3E%3Cpath d='M3.5 0l4 4-4 4v-3h-3v-2h3v-3z'/%3E%3C/svg%3E");
+}
+
+.project-description {
+   display: none;
+   margin-top: 20px;
+}
